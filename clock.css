@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#176B87, #64CCC5);
+}
+
+.clock{
+    height: 90vmin;
+    width: 90vmin;
+    position: absolute;
+    background: #337CCF;
+    border-radius: 50%;
+    border: 5px solid #053B50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 5px #111 , inset 0 0 10px 5px #111;
+}
+
+.clock .num{
+    --rotation: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.clock .num1{--rotation: 30deg}
+.clock .num2{--rotation: 60deg}
+.clock .num3{--rotation: 90deg}
+.clock .num4{--rotation: 120deg}
+.clock .num5{--rotation: 150deg}
+.clock .num6{--rotation: 180deg}
+.clock .num7{--rotation: 210deg}
+.clock .num8{--rotation: 240deg}
+.clock .num9{--rotation: 270deg}
+.clock .num10{--rotation: 300deg}
+.clock .num11{--rotation: 330deg}
+.clock .num12{--rotation: 360deg}
+
+#hourhand{
+    height: 20%;
+    width: 3%;
+    background: #fff;
+}
+
+#minhand{
+    height: 25%;
+    width: 2%;
+    background: #777;
+}
+
+#sechand{
+    height: 30%;
+    width: 1%;
+    background: #EFB495;
+}
+
+#hourhand , #minhand, #sechand{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    z-index: -1;
+    transform-origin: bottom;
+    border-radius: 4vmin;
+}
+
+
+
+
+
+ 
